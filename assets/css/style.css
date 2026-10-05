@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+  }
+  
+  /* HEADER */
+  header {
+    background: #1e88e5;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  
+  /* CONTAINER */
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* LOGIN */
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* CARD (DEFAULT FOR PAGES) */
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+  }
+  
+  /* LOGIN CARD ONLY */
+  .login .card {
+    width: 320px;
+  }
+  
+  /* FORMS */
+  .card input,
+  .card textarea,
+  .card select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .card button {
+    padding: 10px 15px;
+    background: #1e88e5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background: #1565c0;
+  }
+  
+  /* TABLES */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background: #f0f2f5;
+  }
+  
+  /* STATUS BASE */
+  .status {
+    font-weight: bold;
+  }
+  
+  /* PROJECT STATUS */
+  .status.starting { color: #ff9800; }
+  .status.running { color: #1e88e5; }
+  .status.completed { color: #4caf50; }
+  
+  /* TASK STATUS */
+  .status.todo { color: gray; }
+  .status.inprogress { color: #ff9800; }
+  .status.done { color: #4caf50; }
+  
+  /* DASHBOARD STATS */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .stat {
+    padding: 20px;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .blue { background: #2196f3; }
+  .green { background: #4caf50; }
+  .orange { background: #ff9800; }
+  .red { background: #f44336; }
+  
+  /* CHARTS */
+  canvas {
+    background: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
